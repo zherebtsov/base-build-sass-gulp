@@ -1,0 +1,24 @@
+.blog {
+  margin-top: 50px;
+}
+
+.blog__post {
+  margin-bottom: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .blog__post {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .blog__post {
+    max-width: 490px;
+  }
+}

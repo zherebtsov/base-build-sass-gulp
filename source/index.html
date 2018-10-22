@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная страница</title>
+  <!-- Forced preloading fonts for reduced FOIT effect -->
+  <!--<link rel="preload" href="fonts/opensans.woff2" as="font">-->
+  <!--<link rel="preload" href="fonts/opensansbold.woff2" as="font">-->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <nav class="main-nav main-nav--close main-nav--no-js">
+      <div class="main-nav__container container">
+        <div class="main-nav__logo-wrapper">
+          <div class="main-nav__logo logo">
+            <a href="#" class="logo__link">Логотип</a>
+          </div>
+          <button class="main-nav__toggle">
+            <span class="main-nav__toggle-hamburger">
+              <span class="visually-hidden">Открыть меню</span>
+            </span>
+            <span class="main-nav__toggle-close">
+              <span class="visually-hidden">Закрыть меню</span>
+            </span>
+          </button>
+        </div>
+        <h2 class="visually-hidden">Главное меню</h2>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="">Раздел 1</a></li>
+          <li class="main-nav__item"><a href="">Раздел 2</a></li>
+          <li class="main-nav__item"><a href="">Раздел 3</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main container">
+    <h1 class="page-main__title">Базовая сборка Gulp, SASS</h1>
+    <p class="page-main__subtitle">BEM, Mobile First</p>
+    <section class="blog">
+      <h2 class="visually-hidden">Блог</h2>
+      <article class="blog__post post">
+        <div class="post__img">
+          <a href="#" class="post__img-link">
+            <picture>
+              <source media="(min-width: 768px) and (max-width: 1023px)" srcset="img/blog_01_tablet@2x.jpg 2x, img/blog_01_tablet@1x.jpg 1x">
+              <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/blog_01_tablet@2x.webp 2x, img/blog_01_tablet@1x.webp 1x">
+              <source type="image/webp" srcset="img/blog_01@1x.webp 1x, img/blog_01@2x.webp 2x">
+              <img class="post__img-source" src="img/blog_01@1x.jpg" srcset="img/blog_01@2x.jpg 2x" alt="машина">
+            </picture>
+          </a>
+        </div>
+        <h2 class="post__title"><a href="#">Первая статья</a></h2>
+        <p class="post__time"><time datetime="2018-10-05T14:07:25+00:00">05 Октября 2018</time></p>
+        <div class="post__preview">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis placeat qui quod quos ut?</p>
+        </div>
+        <div class="post__controls">
+          <a href="#" class="post__more-link">Подробнее</a>
+        </div>
+      </article>
+
+      <article class="blog__post post">
+        <div class="post__img">
+          <a href="#" class="post__img-link">
+            <picture>
+              <source media="(min-width: 768px) and (max-width: 1024px)" srcset="img/blog_02_tablet@2x.jpg 2x, img/blog_02_tablet@1x.jpg 1x">
+              <source type="image/webp" media="(min-width: 768px) and (max-width: 1024px)" srcset="img/blog_02_tablet@2x.webp 2x, img/blog_02_tablet@1x.webp 1x">
+              <source type="image/webp" srcset="img/blog_02@1x.webp 1x, img/blog_02@2x.webp 2x">
+              <img class="post__img-source" src="img/blog_02@1x.jpg" srcset="img/blog_02@2x.jpg 2x" alt="Большой дворец">
+            </picture>
+          </a>
+        </div>
+        <h2 class="post__title"><a href="#">Вторая статья</a></h2>
+        <p class="post__time"><time datetime="2018-10-04T14:07:25+00:00">04 Октября 2018</time></p>
+        <div class="post__preview">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa cumque eaque, hic maxime nobis nostrum, perspiciatis placeat qui quod quos ut? Animi commodi deleniti dolorem necessitatibus quasi tempora unde.</p>
+        </div>
+        <div class="post__controls">
+          <a href="#" class="post__more-link">Подробнее</a>
+        </div>
+      </article>
+
+      <article class="blog__post post">
+        <div class="post__img">
+          <a href="#" class="post__img-link">
+            <picture>
+              <source media="(min-width: 768px) and (max-width: 1024px)" srcset="img/blog_03_tablet@2x.jpg 2x, img/blog_03_tablet@1x.jpg 1x">
+              <source type="image/webp" media="(min-width: 768px) and (max-width: 1024px)" srcset="img/blog_03_tablet@2x.webp 2x, img/blog_03_tablet@1x.webp 1x">
+              <source type="image/webp" srcset="img/blog_03@1x.webp 1x, img/blog_03@2x.webp 2x">
+              <img class="post__img-source" src="img/blog_03@1x.jpg" srcset="img/blog_03@2x.jpg 2x" alt="Храм Василия Блаженного">
+            </picture>
+          </a>
+        </div>
+        <h2 class="post__title"><a href="#">Третья статья</a></h2>
+        <p class="post__time"><time datetime="2018-10-03T14:07:25+00:00">03 Октября 2018</time></p>
+        <div class="post__preview">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa cumque eaque, hic maxime nobis nostrum, perspiciatis placeat qui quod quos ut? Animi commodi deleniti dolorem necessitatibus quasi tempora unde.</p>
+        </div>
+        <div class="post__controls">
+          <a href="#" class="post__more-link">Подробнее</a>
+        </div>
+      </article>
+
+      <article class="blog__post post">
+        <div class="post__img">
+          <a href="#" class="post__img-link">
+            <picture>
+              <source media="(min-width: 768px) and (max-width: 1024px)" srcset="img/blog_04_tablet@2x.jpg 2x, img/blog_04_tablet@1x.jpg 1x">
+              <source type="image/webp" media="(min-width: 768px) and (max-width: 1024px)" srcset="img/blog_04_tablet@2x.webp 2x, img/blog_04_tablet@1x.webp 1x">
+              <source type="image/webp" srcset="img/blog_04@1x.webp 1x, img/blog_04@2x.webp 2x">
+              <img class="post__img-source" src="img/blog_04@1x.jpg" srcset="img/blog_04@2x.jpg 2x" alt="Памятник жертвам холокоста">
+            </picture>
+          </a>
+        </div>
+        <h2 class="post__title"><a href="#">Четвертая статья</a></h2>
+        <p class="post__time"><time datetime="2018-10-02T14:07:25+00:00">02 Октября 2018</time></p>
+        <div class="post__preview">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa cumque eaque, hic maxime nobis nostrum, perspiciatis placeat qui quod quos ut? Animi commodi deleniti dolorem necessitatibus quasi tempora unde.</p>
+        </div>
+        <div class="post__controls">
+          <a href="#" class="post__more-link">Подробнее</a>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <section class="social-btn">
+      <h2 class="visually-hidden">Соцсети</h2>
+      <ul class="social-btn__list">
+        <li class="social-btn__item">
+          <a href="#">
+            <span class="visually-hidden">Repository on github</span>
+            <svg height="30" width="30"><use xlink:href="#github-brands"></use></svg>
+          </a>
+        </li>
+        <li class="social-btn__item">
+          <a href="#">
+            <span class="visually-hidden">VK group</span>
+            <svg height="30" width="30"><use xlink:href="#vk-brands"></use></svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+
+  <!-- SVG sprite -->
+  <div style="display:none">
+    <include src="build/img/icons-sprite.svg"></include>
+  </div>
+
+  <!-- JS scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
